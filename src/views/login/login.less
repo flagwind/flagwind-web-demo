@@ -1,0 +1,102 @@
+body
+{
+    background: #3384c6;
+}
+
+.v-login
+{
+    &-effect
+    {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -2;
+    }
+
+    &-content
+    {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        -moz-transform:  translateY(-50%);
+        -ms-transform:  translateY(-50%);
+        -o-transform:  translateY(-50%);
+        transform:  translateY(-50%);
+
+        h1
+        {
+            text-transform: uppercase;
+            font-size: 85px;
+            font-weight: 700;
+            letter-spacing: 0.01em;
+            color: #fff;
+            
+            &:after
+            {
+                content: "";
+                width: 80px;
+                display: block;
+                background: #fff;
+                height: 10px;
+                margin: 20px auto;
+                line-height: 1.1;
+            }
+        }
+        
+        h2
+        {
+            margin: 0 0 30px 0;
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+        }
+        
+        .ivu-input
+        {
+            width:220px !important;
+            border-radius: 4px;
+        }
+
+        .ivu-form-item-error-tip
+        {
+            font-size: 14px;
+        }
+        
+        .ivu-btn
+        {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            border: 2px solid #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.015em;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-decoration: none;
+            background: transparent;
+            -webkit-transition: all 0.4s;
+            -moz-transition: all 0.4s;
+            -o-transition: all 0.4s;
+            transition: all 0.4s;
+            
+            &:hover,
+            &:focus,
+            &:active
+            {
+                color: #2f4050;
+                border-color: #2f4050;
+            }
+        }
+    }
+}
