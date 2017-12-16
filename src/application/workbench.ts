@@ -23,10 +23,6 @@ import modules from "../store";
 import { components } from "flagwind-web";
 
 // 导入应用组件
-// import Code from "examples/components/code";
-// import Example from "examples/components/example";
-// import Generic from "examples/layouts/generic.vue";
-// import Article from "examples/layouts/article.vue";
 
 // 倒入全局样式
 import "flagwind-web/dist/styles/flagwind.css";
@@ -105,13 +101,9 @@ export default class Workbench extends WorkbenchBase
         // 注册系统组件
         Vue.use(components);
         
-        // // 注册应用组件
-        // Vue.component("u-code", Code);
-        // Vue.component("u-example", Example);
-
-        // // 注册布局母版
-        // Vue.component("l-generic", Generic);
-        // Vue.component("l-article", Article);
+        // 注册应用组件
+        
+        // 注册布局母版
     }
     
     /**

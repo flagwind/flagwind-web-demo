@@ -82,7 +82,7 @@ export default class ApplicationContext extends ApplicationContextBase
     {
         super("flagwind-web-demo");
     }
-
+    
     /**
      * 创建一个工作台对象。
      * @override
