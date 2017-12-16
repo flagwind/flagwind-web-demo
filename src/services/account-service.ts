@@ -7,6 +7,7 @@
  */
 
 import flagwind from "flagwind-core";
+import injectable = flagwind.injectable;
 import { ICredential, IUserProfile } from "src/models";
 import ServiceBase from "./service-base";
 
@@ -15,7 +16,7 @@ import ServiceBase from "./service-base";
  * @class
  * @version 1.0.0
  */
-@flagwind.injectable()
+@injectable()
 export default class AccountService extends ServiceBase
 {
     /**
