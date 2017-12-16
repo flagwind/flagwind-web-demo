@@ -5,16 +5,16 @@
                     <p class="v-error-content-title">
                         4<span class="v-error-403-icon-1"><i-icon type="android-lock"></i-icon></span><span class="v-error-403-icon-2"><i-icon size="220" type="ios-bolt"></i-icon></span>
                     </p>
-                    <p class="v-error-content-message">You don't have permission</p>
+                    <p class="v-error-content-message">哎呀...访问被拒绝了</p>
                     <p class="v-error-button-strip">
-                        <i-button @click="onBackHome" size="large" type="text">返回首页</i-button>
-                        <i-button @click="onBackPrev" size="large" type="primary">返回上一页</i-button>
+                        <i-button @click="onBackHomeClick" size="large" type="text">返回首页</i-button>
+                        <i-button @click="onBackPrevClick" size="large" type="primary">返回上一页</i-button>
                     </p>
                 </i-card>
         </div>
     </div>
 </template>
-
+                                       
 <style lang="less">
     @import "./403.less";
 </style>
@@ -22,15 +22,32 @@
 <script lang="ts">
 import { component, View } from "flagwind-web";
 
+/**
+ * 错误 403 视图。
+ * @class
+ * @version 1.0.0
+ */
 @component
-export default class Error403 extends View
+export default class Error403View extends View
 {
-    protected onBackHome(e: MouseEvent): void
+    /**
+     * 当返回首页按钮点击时调用。
+     * @protected
+     * @param  {MouseEvent} e 鼠标事件参数。
+     * @returns void
+     */
+    protected onBackHomeClick(e: MouseEvent): void
     {
         this.$router.push("home");
     }
     
-    protected onBackPrev(e: MouseEvent): void
+    /**
+     * 当返回上一页按钮点击时调用。
+     * @protected
+     * @param  {MouseEvent} e 鼠标事件参数。
+     * @returns void
+     */
+    protected onBackPrevClick(e: MouseEvent): void
     {
         this.$router.go(-1);
     }

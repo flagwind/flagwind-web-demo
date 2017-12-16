@@ -57,7 +57,7 @@ export default class AccountService extends ServiceBase
             }
             else
             {
-                reject("您的账号已被禁用，请联系代理商。");
+                reject("您的账号已被禁用，请联系管理员。");
             }
         });
     }

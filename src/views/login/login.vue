@@ -1,5 +1,5 @@
 <template>
-    <div class="v-login">
+    <div class="v-login" @keydown.enter="onSubmit">
         <!--粒子特效 BEGIN-->
         <div class="v-login-effect"></div>
         <!--粒子特效 END-->
@@ -137,7 +137,7 @@ export default class LoginView extends View
     }
     
     /**
-     * 当登陆按钮点击时调用的事件处理方法。
+     * 当提交登录表单时调用。
      * @protected
      * @param  {MouseEvent} e 鼠标事件参数。
      * @returns void
