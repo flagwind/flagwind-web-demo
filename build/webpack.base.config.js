@@ -1,14 +1,16 @@
-"use strict"
 const path = require("path")
 const utils = require("./utils")
 const config = require("../config")
+const webpack = require("webpack")
 const vueLoaderConfig = require("./vue-loader.conf")
 
-function resolve(dir) {
+function resolve(dir)
+{
     return path.join(__dirname, "..", dir)
 }
 
-const createLintingRule = () => ({
+const createLintingRule = () =>
+({
     test: /\.(js|vue)$/,
     loader: "eslint-loader",
     enforce: "pre",
@@ -19,21 +21,24 @@ const createLintingRule = () => ({
     }
 })
 
-module.exports = {
+module.exports =
+{
     context: path.resolve(__dirname, "../"),
-    entry: {
+    entry:
+    {
         app: "./src/index.ts"
     },
-    output: {
+    output:
+    {
         path: config.build.assetsRoot,
         filename: "[name].js",
-        publicPath: process.env.NODE_ENV === "production"
-            ? config.build.assetsPublicPath
-            : config.dev.assetsPublicPath
+        publicPath: process.env.NODE_ENV === "production" ? config.build.assetsPublicPath : config.dev.assetsPublicPath
     },
-    resolve: {
+    resolve:
+    {
         extensions: [".js", ".vue", ".json", ".ts"],
-        alias: {
+        alias:
+        {
             "vue$": "vue/dist/vue.esm.js",
             "src": resolve("src"),
             "components": resolve("src/components"),
@@ -41,8 +46,10 @@ module.exports = {
             "views": resolve("src/views"),
         }
     },
-    module: {
-        rules: [
+    module:
+    {
+        rules:
+        [
             {
                 test: /\.ts$/,
                 exclude: /node_modules/,
@@ -93,7 +100,8 @@ module.exports = {
             }
         ]
     },
-    node: {
+    node:
+    {
         // prevent webpack from injecting useless setImmediate polyfill because Vue
         // source contains it (although only uses it if it"s native).
         setImmediate: false,
@@ -104,5 +112,18 @@ module.exports = {
         net: "empty",
         tls: "empty",
         child_process: "empty"
-    }
+    },
+    plugins:
+    [
+        new webpack.DllReferencePlugin
+        ({
+            context: path.resolve(__dirname, ".."),
+            manifest: require("../static/lib/vue.manifest.json")
+        }),
+        new webpack.DllReferencePlugin
+        ({
+            context: path.resolve(__dirname, ".."),
+            manifest: require("../static/lib/flagwind.manifest.json")
+        })
+    ]
 }
