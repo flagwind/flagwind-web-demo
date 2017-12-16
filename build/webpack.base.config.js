@@ -1,29 +1,18 @@
-const path = require("path")
-const utils = require("./utils")
-const config = require("../config")
-const webpack = require("webpack")
-const vueLoaderConfig = require("./vue-loader.conf")
+const path = require("path");
+const utils = require("./utils");
+const config = require("../config");
+const webpack = require("webpack");
+const vueLoaderConfig = require("./vue-loader.config");
 
 function resolve(dir)
 {
-    return path.join(__dirname, "..", dir)
+    return path.join(__dirname, "..", dir);
 }
-
-const createLintingRule = () =>
-({
-    test: /\.(js|vue)$/,
-    loader: "eslint-loader",
-    enforce: "pre",
-    include: [resolve("src"), resolve("test")],
-    options: {
-        formatter: require("eslint-friendly-formatter"),
-        emitWarning: !config.dev.showEslintErrorsInOverlay
-    }
-})
 
 module.exports =
 {
     context: path.resolve(__dirname, "../"),
+
     entry:
     {
         app: "./src/index.ts"
@@ -79,7 +68,7 @@ module.exports =
                 loader: "url-loader",
                 options: {
                     limit: 10000,
-                    name: utils.assetsPath("img/[name].[hash:7].[ext]")
+                    name: utils.assetsPath("images/[name].[hash:7].[ext]")
                 }
             },
             {
@@ -118,12 +107,17 @@ module.exports =
         new webpack.DllReferencePlugin
         ({
             context: path.resolve(__dirname, ".."),
-            manifest: require("../static/lib/vue.manifest.json")
+            manifest: require("../config/vue.manifest.json")
         }),
         new webpack.DllReferencePlugin
         ({
             context: path.resolve(__dirname, ".."),
-            manifest: require("../static/lib/flagwind.manifest.json")
+            manifest: require("../config/flagwind.manifest.json")
+        }),
+        new webpack.DllReferencePlugin
+        ({
+            context: path.resolve(__dirname, ".."),
+            manifest: require("../config/vendor.manifest.json")
         })
     ]
 }
