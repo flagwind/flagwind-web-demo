@@ -11,7 +11,11 @@
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
         "paths": {
-            "@/*": ["./src/*"]
+            "src/*": ["./src/*"],
+            "components/*": ["./src/components/*"],
+            "models/*": ["./src/models/*"],
+            "views/*": ["./src/views/*"],
+            "@iview/*": ["./node_modules/flagwind-web/dist/typings/components/iview/typings/*"]
         },
         "lib": 
         [

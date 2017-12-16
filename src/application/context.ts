@@ -26,7 +26,7 @@ export default class ApplicationContext extends ApplicationContextBase
 {
     private _router: Router;
     private _store: Store<any>;
-
+    
     /**
      * 获取或设置当前应用的主路由对象。
      * @property

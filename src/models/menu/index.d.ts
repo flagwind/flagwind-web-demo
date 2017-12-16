@@ -6,5 +6,9 @@
  * Copyright (C) 2010-2017 Flagwind Inc. All rights reserved. 
  */
 
-export * from "./account";
-export * from "./menu";
+import IMenuItem from "./menu-item";
+
+export
+{
+    IMenuItem
+}

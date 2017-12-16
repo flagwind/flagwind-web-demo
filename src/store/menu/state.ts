@@ -6,10 +6,11 @@
  * Copyright (C) 2010-2017 Flagwind Inc. All rights reserved. 
  */
 
-import * as models from "@/models";
 import flagwind from "flagwind-core";
 import Type = flagwind.Type;
 import InvalidOperationException = flagwind.InvalidOperationException;
+
+import { IMenuItem } from "src/models";
 
 export default class State
 {
@@ -18,14 +19,14 @@ export default class State
      * @member
      * @returns Array<models.IMenuItem>
      */
-    public items: Array<models.IMenuItem> = new Array<models.IMenuItem>();
+    public items: Array<IMenuItem> = new Array<IMenuItem>();
     
     /**
      * 查找指定路径的菜单项。
      * @param  {string} path 菜单路径字符串。
      * @returns models.IMenuItem 菜单项，如果未找到对应路径的菜单项则为 null。
      */
-    public findItem(path: string, items: Array<models.IMenuItem> = this.items): models.IMenuItem
+    public findItem(path: string, items: Array<IMenuItem> = this.items): IMenuItem
     {
         // 不允许查找根路径
         if(path === "/")
@@ -33,7 +34,7 @@ export default class State
             return null;
         }
         
-        let result: models.IMenuItem = null;
+        let result: IMenuItem = null;
         
         for(let item of items)
         {
@@ -43,7 +44,7 @@ export default class State
 
                 break;
             }
-
+            
             if(Type.isArray(item.children))
             {
                 result = this.findItem(path, item.children);

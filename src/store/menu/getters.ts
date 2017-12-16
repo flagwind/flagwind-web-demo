@@ -6,11 +6,11 @@
  * Copyright (C) 2010-2017 Flagwind Inc. All rights reserved. 
  */
 
-import * as models from "@/models";
+import { IMenuItem } from "src/models";
 import { Getter, GetterTree } from "vuex";
 import State from "./state";
 
-export function items(state: State): Array<models.IMenuItem>
+export function items(state: State): Array<IMenuItem>
 {
     return state.items;
 }

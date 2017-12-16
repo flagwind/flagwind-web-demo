@@ -6,5 +6,4 @@
  * Copyright (C) 2010-2017 Flagwind Inc. All rights reserved. 
  */
 
-export * from "./account";
-export * from "./menu";
+export { default as AccountService } from "./account-service";

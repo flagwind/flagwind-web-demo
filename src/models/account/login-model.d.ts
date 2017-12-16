@@ -15,15 +15,22 @@ export default interface ILoginModel
 {
     /**
      * 获取或设置用户名。
-     * @property
+     * @member
      * @returns string
      */
     username: string;
     
     /**
      * 获取或设置密码。
-     * @property
+     * @member
      * @returns string
      */
     password: string;
+    
+    /**
+     * 获取或设置是否记住密码。
+     * @member
+     * @returns boolean
+     */ 
+    rememberPassword?: boolean;
 }

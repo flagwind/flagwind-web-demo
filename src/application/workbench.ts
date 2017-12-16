@@ -30,7 +30,7 @@ import { components } from "flagwind-web";
 
 // 倒入全局样式
 import "flagwind-web/dist/styles/flagwind.css";
-import "@/styles/index.less";
+import "src/styles/index.less";
 
 /**
  * 提供工作台的基本封装。

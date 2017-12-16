@@ -6,11 +6,11 @@
  * Copyright (C) 2010-2017 Flagwind Inc. All rights reserved. 
  */
 
-import * as models from "@/models";
+import { IMenuItem } from "src/models";
 import { Store, ActionTree, ActionContext } from "vuex";
 import State from "./state";
 
-export function add(store: ActionContext<State, any>, value: { path: string; items: Array<models.IMenuItem> }): void
+export function add(store: ActionContext<State, any>, value: { path: string; items: Array<IMenuItem> }): void
 {
     store.commit("ADD", value);
 }
