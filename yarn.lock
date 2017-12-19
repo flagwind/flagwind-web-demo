@@ -235,7 +235,7 @@ async-limiter@~1.0.0:
 
 async-validator@^1.8.1:
   version "1.8.2"
-  resolved "http://116.62.155.198:8866/async-validator/-/async-validator-1.8.2.tgz#b77597226e96242f8d531c0d46ae295f62422ba4"
+  resolved "http://registry.npm.taobao.org/async-validator/-/async-validator-1.8.2.tgz#b77597226e96242f8d531c0d46ae295f62422ba4"
   dependencies:
     babel-runtime "6.x"
 
@@ -908,7 +908,7 @@ base64id@1.0.0:
 
 batch-processor@^1.0.0:
   version "1.0.0"
-  resolved "http://116.62.155.198:8866/batch-processor/-/batch-processor-1.0.0.tgz#75c95c32b748e0850d10c2b168f6bdbe9891ace8"
+  resolved "http://registry.npm.taobao.org/batch-processor/-/batch-processor-1.0.0.tgz#75c95c32b748e0850d10c2b168f6bdbe9891ace8"
 
 batch@0.6.1:
   version "0.6.1"
@@ -1782,7 +1782,7 @@ deep-is@~0.1.3:
 
 deepmerge@^1.5.2:
   version "1.5.2"
-  resolved "http://116.62.155.198:8866/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
+  resolved "http://registry.npm.taobao.org/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
 
 define-properties@^1.1.2:
   version "1.1.2"
@@ -1966,7 +1966,7 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.28:
 
 element-resize-detector@^1.1.12:
   version "1.1.12"
-  resolved "http://116.62.155.198:8866/element-resize-detector/-/element-resize-detector-1.1.12.tgz#8b3fd6eedda17f9c00b360a0ea2df9927ae80ba2"
+  resolved "http://registry.npm.taobao.org/element-resize-detector/-/element-resize-detector-1.1.12.tgz#8b3fd6eedda17f9c00b360a0ea2df9927ae80ba2"
   dependencies:
     batch-processor "^1.0.0"
 
@@ -2455,7 +2455,7 @@ flagwind-core@^1.0.3:
 
 flagwind-web@^1.0.0:
   version "1.0.0"
-  resolved "http://116.62.155.198:8866/flagwind-web/-/flagwind-web-1.0.0.tgz#264150932e086ffb6c813e9d1050908284d0d7fb"
+  resolved "http://registry.npm.taobao.org/flagwind-web/-/flagwind-web-1.0.0.tgz#264150932e086ffb6c813e9d1050908284d0d7fb"
   dependencies:
     iview "^2.7.3"
     vue-property-decorator "^6.0.0"
@@ -3297,7 +3297,7 @@ istanbul@^0.4.0:
 
 iview@^2.7.3:
   version "2.7.4"
-  resolved "http://116.62.155.198:8866/iview/-/iview-2.7.4.tgz#be5450970a2e83623d66579e8c05ae7ed63f5cc8"
+  resolved "http://registry.npm.taobao.org/iview/-/iview-2.7.4.tgz#be5450970a2e83623d66579e8c05ae7ed63f5cc8"
   dependencies:
     async-validator "^1.8.1"
     core-js "^2.5.0"
@@ -3309,7 +3309,7 @@ iview@^2.7.3:
 
 jparticles@^2.0.1:
   version "2.0.1"
-  resolved "http://116.62.155.198:8866/jparticles/-/jparticles-2.0.1.tgz#e5a3cf0edb1b1c204662cead7bc5043ee186b567"
+  resolved "http://registry.npm.taobao.org/jparticles/-/jparticles-2.0.1.tgz#e5a3cf0edb1b1c204662cead7bc5043ee186b567"
 
 js-base64@^2.1.9:
   version "2.4.0"
@@ -3664,7 +3664,7 @@ lodash.memoize@^4.1.2:
 
 lodash.throttle@^4.1.1:
   version "4.1.1"
-  resolved "http://116.62.155.198:8866/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  resolved "http://registry.npm.taobao.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
 
 lodash.uniq@^4.5.0:
   version "4.5.0"
@@ -4459,7 +4459,7 @@ pkg-dir@^2.0.0:
 
 popper.js@^0.6.4:
   version "0.6.4"
-  resolved "http://116.62.155.198:8866/popper.js/-/popper.js-0.6.4.tgz#1837c4760af54d2bb20b66f9c09b92993d84c629"
+  resolved "http://registry.npm.taobao.org/popper.js/-/popper.js-0.6.4.tgz#1837c4760af54d2bb20b66f9c09b92993d84c629"
 
 portfinder@^1.0.13, portfinder@^1.0.9:
   version "1.0.13"
@@ -5029,7 +5029,7 @@ reduce-function-call@^1.0.1:
 
 reflect-metadata@^0.1.10:
   version "0.1.10"
-  resolved "http://116.62.155.198:8866/reflect-metadata/-/reflect-metadata-0.1.10.tgz#b4f83704416acad89988c9b15635d47e03b9344a"
+  resolved "http://registry.npm.taobao.org/reflect-metadata/-/reflect-metadata-0.1.10.tgz#b4f83704416acad89988c9b15635d47e03b9344a"
 
 regenerate@^1.2.1:
   version "1.3.3"
@@ -5781,7 +5781,7 @@ timers-browserify@^2.0.4:
 
 tinycolor2@^1.4.1:
   version "1.4.1"
-  resolved "http://116.62.155.198:8866/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
+  resolved "http://registry.npm.taobao.org/tinycolor2/-/tinycolor2-1.4.1.tgz#f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8"
 
 tmp@0.0.31:
   version "0.0.31"
@@ -6107,7 +6107,7 @@ void-elements@^2.0.0:
 
 vue-class-component@^6.0.0:
   version "6.1.2"
-  resolved "http://116.62.155.198:8866/vue-class-component/-/vue-class-component-6.1.2.tgz#87ac0265b0db71a3f49f10d90e4f69f9be9c2fbd"
+  resolved "http://registry.npm.taobao.org/vue-class-component/-/vue-class-component-6.1.2.tgz#87ac0265b0db71a3f49f10d90e4f69f9be9c2fbd"
 
 vue-hot-reload-api@^2.2.0:
   version "2.2.4"
@@ -6133,7 +6133,7 @@ vue-loader@^13.5.0:
 
 vue-property-decorator@^6.0.0:
   version "6.0.0"
-  resolved "http://116.62.155.198:8866/vue-property-decorator/-/vue-property-decorator-6.0.0.tgz#bb651b293542e31db0d24f36f4b0250ef08d8515"
+  resolved "http://registry.npm.taobao.org/vue-property-decorator/-/vue-property-decorator-6.0.0.tgz#bb651b293542e31db0d24f36f4b0250ef08d8515"
   dependencies:
     reflect-metadata "^0.1.10"
     vue-class-component "^6.0.0"
