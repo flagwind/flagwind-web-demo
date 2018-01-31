@@ -4,6 +4,8 @@
         <br />
         <i-button @click="value += 10">加值</i-button>
         <i-button @click="value -= 10">减值</i-button>
+        <br />
+        <u-panel></u-panel>
     </div>
 </template>
 
@@ -13,8 +15,15 @@
 
 <script lang="ts">
 import { component, View } from "flagwind-web";
+import Panel from "components/panel/panel";
 
 @component
+({
+    components:
+    {
+        "u-panel": Panel
+    }
+})
 export default class Dashboard extends View
 {
     protected value: number = 123456;

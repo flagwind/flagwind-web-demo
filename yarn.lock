@@ -233,9 +233,9 @@ async-limiter@~1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/async-limiter/download/async-limiter-1.0.0.tgz#78faed8c3d074ab81f22b4e985d79e8738f720f8"
 
-async-validator@^1.8.1:
+async-validator@^1.8.2:
   version "1.8.2"
-  resolved "http://registry.npm.taobao.org/async-validator/download/async-validator-1.8.2.tgz#b77597226e96242f8d531c0d46ae295f62422ba4"
+  resolved "https://registry.yarnpkg.com/async-validator/-/async-validator-1.8.2.tgz#b77597226e96242f8d531c0d46ae295f62422ba4"
   dependencies:
     babel-runtime "6.x"
 
@@ -1964,9 +1964,9 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.28:
   version "1.3.28"
   resolved "http://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.28.tgz#8dd4e6458086644e9f9f0a1cf32e2a1f9dffd9ee"
 
-element-resize-detector@^1.1.12:
-  version "1.1.12"
-  resolved "http://registry.npm.taobao.org/element-resize-detector/download/element-resize-detector-1.1.12.tgz#8b3fd6eedda17f9c00b360a0ea2df9927ae80ba2"
+element-resize-detector@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/element-resize-detector/-/element-resize-detector-1.1.13.tgz#f61907e98a91b1ad215f92790bc15113df68444d"
   dependencies:
     batch-processor "^1.0.0"
 
@@ -2449,15 +2449,15 @@ find-up@^2.0.0, find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-flagwind-core@^1.0.3:
-  version "1.0.3"
-  resolved "http://registry.npm.taobao.org/flagwind-core/download/flagwind-core-1.0.3.tgz#30fcd97895a4b7c46e3ea504a5b8bfaf341975bf"
+flagwind-core@1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/flagwind-core/-/flagwind-core-1.0.7.tgz#0b0b2b71c802952b2cd77cbf31f2dc9e94d5896c"
 
-flagwind-web@^1.0.0:
-  version "1.0.0"
-  resolved "http://registry.npm.taobao.org/flagwind-web/download/flagwind-web-1.0.0.tgz#e823c9ce9f0f33b4218c67913add5353598d4b4a"
+flagwind-web@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/flagwind-web/-/flagwind-web-1.0.2.tgz#6f6e05e58947b47db9b2a570ea292f371b36ad05"
   dependencies:
-    iview "^2.7.3"
+    iview "2.9.0"
     vue-property-decorator "^6.0.0"
 
 flatten@^1.0.2:
@@ -3295,14 +3295,13 @@ istanbul@^0.4.0:
     which "^1.1.1"
     wordwrap "^1.0.0"
 
-iview@^2.7.3:
-  version "2.7.4"
-  resolved "http://registry.npm.taobao.org/iview/download/iview-2.7.4.tgz#be5450970a2e83623d66579e8c05ae7ed63f5cc8"
+iview@2.9.0:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/iview/-/iview-2.9.0.tgz#6267966bf8b198db53504d49c5478036a1a84fa7"
   dependencies:
-    async-validator "^1.8.1"
-    core-js "^2.5.0"
+    async-validator "^1.8.2"
     deepmerge "^1.5.2"
-    element-resize-detector "^1.1.12"
+    element-resize-detector "^1.1.13"
     lodash.throttle "^4.1.1"
     popper.js "^0.6.4"
     tinycolor2 "^1.4.1"
@@ -4924,6 +4923,10 @@ raw-body@2.3.2:
     http-errors "1.6.2"
     iconv-lite "0.4.19"
     unpipe "1.0.0"
+
+raw-loader@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/raw-loader/-/raw-loader-0.5.1.tgz#0c3d0beaed8a01c966d9787bf778281252a979aa"
 
 rc@^1.1.7:
   version "1.2.2"

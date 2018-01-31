@@ -11,4 +11,4 @@ import IMenuItem from "./menu-item";
 export
 {
     IMenuItem
-}
+};

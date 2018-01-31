@@ -31,6 +31,6 @@ export default interface ILoginModel
      * 获取或设置是否记住密码。
      * @member
      * @returns boolean
-     */ 
+     */
     rememberPassword?: boolean;
 }
